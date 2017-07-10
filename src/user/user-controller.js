@@ -1,3 +1,6 @@
 module.exports.Home = (request, reply) => {
-  return reply('hello world!');
+  return  reply.view('index', {
+    title: 'Hapi Boilerplate',
+    message: 'Hello World!'
+  });
 };
