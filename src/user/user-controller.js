@@ -1,6 +1,6 @@
-module.exports.Home = (request, reply) => {
-  return  reply.view('index', {
-    title: 'Hapi Boilerplate',
-    message: 'Hello World!'
-  });
+module.exports.User = (request, reply) => {
+	return  reply.view('index', {
+		title: 'User Page',
+		message: 'Hello World!'
+	});
 };
