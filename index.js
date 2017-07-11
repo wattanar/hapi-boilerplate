@@ -11,9 +11,9 @@ server.register(require('vision'), (err) => {
 	if (err) { throw err; }
 
 	server.views({
-	    engines: { ejs: require('ejs') },
-	    relativeTo: __dirname,
-	    path: 'templates'
+		engines: { ejs: require('ejs') },
+		relativeTo: __dirname,
+		path: 'templates'
 	});
 });
 
