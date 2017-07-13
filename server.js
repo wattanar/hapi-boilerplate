@@ -8,7 +8,9 @@ server.connection({ port: 3000, host: 'localhost' });
 
 server.register(require('vision'), (err) => {
 
-	if (err) { throw err; }
+	if (err) { 
+		throw err; 
+	}
 
 	server.views({
 		engines: { ejs: require('ejs') },
@@ -20,6 +22,8 @@ server.register(require('vision'), (err) => {
 server.route(routes);
 
 server.start((err) => {
-    if (err) { throw err; }
-    console.log(`Server running at: ${server.info.uri}`);
+  if (err) { 
+  	throw err; 
+  }
+  console.log(`Server running at: ${server.info.uri}`);
 });
