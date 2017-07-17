@@ -1,7 +1,5 @@
-const user = require('./src/user/user-route');
-const landing = require('./src/landing/landing-route');
+const Example = require('./src/example/example-route')
 
 module.exports = [].concat(
-	user, 
-	landing
-);
+	Example
+)
