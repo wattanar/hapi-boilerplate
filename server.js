@@ -4,7 +4,7 @@ const Hapi = require('hapi')
 const server = new Hapi.Server()
 const routes = require('./routes')
 
-server.connection({ port: 3000, host: 'localhost' })
+server.connection({ port: 4400, host: 'localhost' })
 
 server.register(require('vision'), (err) => {
 

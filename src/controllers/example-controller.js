@@ -1,5 +1,5 @@
 module.exports.Home = (request, reply) => {
-	return  reply({result: 'Hello World!'})
+	return  reply("Hello World")
 }
 
 module.exports.Page = (request, reply) => {
