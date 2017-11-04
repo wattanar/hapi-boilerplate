@@ -8,8 +8,8 @@
     "start": "node server.js"
   },
   "name": "happi",
-  "description": "Happi with hapi.",
-  "version": "1.0.0",
+  "description": "happi boilerplate",
+  "version": "1.1.0",
   "main": "server.js",
   "devDependencies": {},
   "repository": {
@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/wattanar/happi/issues"
   },
-  "homepage": "https://github.com/wattanar/happi#readme"
+  "homepage": "https://github.com/wattanar/happi#readme",
+  "bin": "server.js",
+  "pkg": {
+    "scripts": "src/**/*.js",
+    "assets": "templates/**/*",
+    "targets": [
+      "node6"
+    ]
+  }
 }
